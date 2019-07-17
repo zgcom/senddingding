@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-func sendDingdingMarkdown(robotUrl string, title string, text string) error {
+func SendMarkdown(robotUrl string, title string, text string) error {
 
 	params := map[string]interface{}{
 		"msgtype": "markdown",
