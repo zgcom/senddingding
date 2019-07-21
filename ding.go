@@ -8,8 +8,8 @@ import (
 	"net/http"
 )
 
-func SendMarkdown(robotUrl string, title string, text string) error {
-
+func SendMarkdown(robotToken string, title string, text string) error {
+	robotUrl := "https://oapi.dingtalk.com/robot/send?access_token=" + robotToken
 	params := map[string]interface{}{
 		"msgtype": "markdown",
 		"markdown": map[string]interface{}{
